@@ -3,8 +3,8 @@ syms theta1 theta2 L1 L2 X Y C2 a b               % L1, L2 = Link1,2 의 length
 T1 = [cos(theta1) -sin(theta1) 0 L1*cos(theta1); sin(theta1) cos(theta1) 0 L1*sin(theta1); 0 0 1 0; 0 0 0 1] % 첫 번째 Transformation Matrix : 원점에서 바라본 첫 번째 joint의 좌표계
 T2 = [cos(theta2) -sin(theta2) 0 L2*cos(theta2); sin(theta2) cos(theta2) 0 L2*sin(theta2); 0 0 1 0; 0 0 0 1] % 두 번째 Transformation Matrix : 첫 번째 joint에서 바라본 두 번째 joint의 좌표계
 T3 = T1*T2                 % 세 번째 Transforamation : 두 번째 joint에서 바라본 End Effector의 좌표계
-X = 10;                    % 설정하고자 하는 End Effector의 X 좌표
-Y = -10;                   % 설정하고자 하는 End Effector의 Y 좌표
+X = 10;                    % End Effector의 X 좌표
+Y = -10;                   % End Effector의 Y 좌표
 L1 = 10;                   % 첫 번째 Link의 Length
 L2 = 10;                   % 두 번째 Link의 Length
 
